@@ -2,18 +2,50 @@
 
 Git 최초 설정
 --
+0. git-scm 설치[https://git-scm.com/download]
+1. github 에서 new repository 를  실행 
+_(*Initialize this repository with a README를 선택하면 글쓰는 공간이 된다.)_
 
-0. git-scm 설치
-1. github 에서 new repository 를  실행
-2. 작업폴더를 vscode 에서 폴더열기
-3. 터미털 창에서 git init
-4. .gitignore 파일을 생성
-5. (vscode에서 처음 한번만 실행) git config --global user.email "b@g.com"
-	-- 5번 과정에서 왼쪽 패널의 파일이 비어있어야 함.(커밋이 완료된 상태)
-6. git commit -m "first commit" // ... 의 모두 커밋을 눌러두 된다.
-7. git remote add origin https://github.com/booldook/dothome.git
-8. git push -u origin master
+### VS Code
+1. 작업폴더를 vscode 에서 폴더열기
+2. 터미털 창에서 git init
+3. 작업폴더에 .gitignore 파일 생성됨
+4. git bash 또는 cmd창에서 git config --global user.email "signUp_email@email.com" 세팅
++ vscode에서 처음 한번만 실행
++ 4번 과정에서 왼쪽 패널의 파일이 비어있어야 함.(커밋이 완료된 상태)
+5. git commit -m "first commit" 
++ 왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋'을 눌러도 된다.
+6. git remote add origin https://github.com/레파지토리 경로
++ 경로는 깃허브에서 레파지토리를 생성하면 나옴
+7. git push -u origin master
++ 왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시' 눌러도 된다.
+8. 생성한 레파지토리 화면 새로고침하면 레파지토리 생성 끗!
 
+### Atom
+1. 터미널 패키지 설치
++ 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
++ default 터미널 실행키: Ctrl+`(숫자1 왼쪽버튼) 또는 상단 메뉴바 Pakages > platformio-ide-terminal > Toggle
++ 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
++ 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
+2. 깃허브 패키지 설치
++ git-plus(akonwi)
++ 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
++ Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
+3. Atom 에서 작업폴더 열기
+4. 터미털 창에서 git init
+5. 왼쪽 패널을 보면 작업폴더에 .git 폴더 생성됨
+6. git bash 또는 cmd창에서 아이디 및 메일세팅
++ 처음 한번만 실행
++ git config user.name "github name"
++ git config user.email github_mail@github.com
++ git remote add origin https://github.com/레파지토리 경로
++ 경로는 깃허브에서 레파지토리를 생성하면 나옴
++ git remote -v(리모트 생성 확인)
+7. 오른쪽 패널 Unstaged Chanhes에 생성되어있던 파일들이 뜸
+8. 터미널 창에 git add "폴더 및 파일 이름" 또는 오른쪽 패널 Unstaged Changes에서 원하는 파일 및 폴더 오른쪽 클릭 'Stage'
+9. 터미널 창에 git commit-m "커밋 메세지" 또는 오른쪽 패널 Staged Changes에서 원하는 파일 및 폴더 선택 후 아래 텍스트 창에 커밋메세지 입력, 'Commit to master' 클릭
+10. Atom 하단 Fetch 오른쪽 클릭 Push 선택 또는 Alt+g+p
+11. 생성한 레파지토리 화면 새로고침하면 레파지토리 생성 끗!
 
 
 Git 설정 방법
