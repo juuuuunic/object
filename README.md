@@ -59,6 +59,55 @@ git remote add origin https://github.com/booldook/sample.git
 // 위의 코드보다는 vscode 의 푸시를 실행
 ~~~
 
+Git 협업하기
+--
+1. 팀원 중 한 명이 master가 되어 환경설정을 마친 프로젝트 파일을 Github에 올리기
+2. 생성한 repository > Setting > Manage access 에서 [Invite a collaborator]
+3. 팀원 이메일에 초대장 보내기
+4. 초대장을 받은 팀원은 메일에서 [View intitaion] > [Accept invitation]
+5. repository > Setting > Manage access 에서 추가된 팀원 확인하기
+6. 팀원들은 각각 자신의 PC에서 branch를 생성하여 독립된 작업공간 마련
+7. 자신의 branch에 push 할 때는 [git push origin 자신의branch이름]
+_명령어에 주의한다!_
+8. 정상적으로 push가 됐으면, repository에 branch를 선택할 수 있는 박스가 생성됨
+7. 병합이 필요할 때 master의 branch에 merge한다.
+
+branch
+--
+### master branch
++ git init 할 때 자동으로 생성되는 기본 branch
++ 동료들의 작업내용을 하나로 합칠 때 사용하는 뼈대 branch 또는 배포용 branch로도 사용할 수 있다. branch 전략은 각각 다르다.
+
+### branch Commands
+1. branch 생성
+```sh
+git branch {branch name}
+```
++ 새로운 branch를 생성하면, 기반이 되는 branch(merge branch)의 버전을 그대로 복사
++ commit 내용도 복사된 branch와 같음
+2. branch 이동
+```sh
+git checkout {branch name}
+```
+3. branch를 생성함과 동시에 이동
+```sh
+git checkout-b {branch name}
+```
+4. branch 목록 및 현재 사용하고 있는 branch를 확인
+```sh
+git branch -r : 원격 브랜치 목록
+git branch -a : 로컬/원격 모든 브랜치 목록
+```
++ *표시가 현재 사용하고 있는 branch
+5. branch pusg
+```sh
+git branch -r : 원격 브랜치 목록
+git branch -a : 로컬/원격 모든 브랜치 목록
+```
++ master가 아닌 branch에 푸쉬하기 때문에 명령어 주의!
+
+
+
 # GIT 팁 모음
 ### 20개 내외의 명령어로 Git 사용하기
 ```sh
