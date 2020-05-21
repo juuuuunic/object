@@ -79,27 +79,27 @@ branch
 + 동료들의 작업내용을 하나로 합칠 때 사용하는 뼈대 branch 또는 배포용 branch로도 사용할 수 있다. branch 전략은 각각 다르다.
 
 ### branch Commands
-1. branch 생성
+##### branch 생성
 ```sh
 git branch {branch name}
 ```
 + 새로운 branch를 생성하면, 기반이 되는 branch(merge branch)의 버전을 그대로 복사
 + commit 내용도 복사된 branch와 같음
-2. branch 이동
+##### branch 이동
 ```sh
 git checkout {branch name}
 ```
-3. branch를 생성함과 동시에 이동
+##### branch를 생성함과 동시에 이동
 ```sh
 git checkout-b {branch name}
 ```
-4. branch 목록 및 현재 사용하고 있는 branch를 확인
+##### branch 목록 및 현재 사용하고 있는 branch를 확인
 ```sh
 git branch -r : 원격 브랜치 목록
 git branch -a : 로컬/원격 모든 브랜치 목록
 ```
 + *표시가 현재 사용하고 있는 branch
-5. branch pusg
+##### branch push
 ```sh
 git branch -r : 원격 브랜치 목록
 git branch -a : 로컬/원격 모든 브랜치 목록
