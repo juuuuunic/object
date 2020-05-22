@@ -41,14 +41,18 @@ git push -u origin master
 
 ### Atom
 1. 터미널 패키지 설치
-+ 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
-+ default 터미널 실행키: Ctrl+`(숫자1 왼쪽버튼) 또는 상단 메뉴바 Pakages > platformio-ide-terminal > Toggle
-+ 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
-+ 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
+~~~
+> 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
+> default 터미널 실행키: Ctrl+`(숫자1 왼쪽버튼) 또는 상단 메뉴바 Pakages > platformio-ide-terminal > Toggle
+> 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
+> 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
+~~~
 2. 깃허브 패키지 설치
-+ git-plus(akonwi)
-+ 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
-+ Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
+~~~
+> git-plus(akonwi)
+> 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
+> Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
+~~~
 3. Atom 에서 작업폴더 열기
 4. 오른쪽 패널 Unstaged Chanhes에 생성되어있던 파일들이 뜸
 5. 터미널 창에 git add "폴더 및 파일 이름" 또는 오른쪽 패널 Unstaged Changes에서 원하는 파일 및 폴더 오른쪽 클릭 'Stage'
