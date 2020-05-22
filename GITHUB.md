@@ -38,6 +38,8 @@ git push -u origin master
 ## Atom
 #### 깃허브 패키지로 깃허브 시작하기
 1. 깃허브 패키지 설치
+
+
 ![atom02](https://user-images.githubusercontent.com/57767002/82638296-9122b680-9c41-11ea-91d9-81d08f5e3dab.PNG)
 ~~~
 > git-plus(akonwi)
@@ -78,6 +80,8 @@ git push -u origin master
 
 #### 터미널창으로 깃허브 시작하기
 1. 터미널 패키지 설치
+
+
 ![atom01](https://user-images.githubusercontent.com/57767002/82638173-486afd80-9c41-11ea-847b-67a3381f14b5.PNG)
 ~~~
 > 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
@@ -92,7 +96,7 @@ git add "폴더 및 파일 이름"
 ~~~
 4. 커밋하기(commit)
 ~~~
-git commit-m "커밋 메세지"
+git commit -m "커밋 메세지"
 ~~~
 ![atom07](https://user-images.githubusercontent.com/57767002/82638683-5e2cf280-9c42-11ea-934e-122dbf01b92a.png)
 5. 푸쉬하기(push)
@@ -101,7 +105,9 @@ git push -u origin master
 ~~~
 6. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
-![atom11](https://user-images.githubusercontent.com/57767002/82640992-946c7100-9c46-11ea-975a-aa7f63f21e29.png)
+
+![atom11](https://user-images.githubusercontent.com/57767002/82641878-02656800-9c48-11ea-9089-ea126a0404f5.png)
+
 
 
 Git 협업하기
