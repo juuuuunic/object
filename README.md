@@ -101,10 +101,30 @@ git branch -a : 로컬/원격 모든 브랜치 목록
 + *표시가 현재 사용하고 있는 branch
 ##### branch push
 ```sh
-git branch -r : 원격 브랜치 목록
-git branch -a : 로컬/원격 모든 브랜치 목록
+git checkout master
+git merge branchName
+git push origin master
 ```
++ 팀원은 master branch에 push하기 전에 먼저 자신의 repository에 merge한 다음에 master branch에 push
 + master가 아닌 branch에 푸쉬하기 때문에 명령어 주의!
++ 자신의 branch는 최신 코드를 push/pull하는 용도로만 사용하는 것이 관리에 있어서 용이
++ master branch는 관리만
+##### master branch에서 pull
+```sh
+git checkout master
+git pull origin master
+```
+##### 최신코드를 자신의 branch에 이동 후 merge
+```sh
+git checkout branchName
+git merge master
+```
+##### 이전 코드로 돌아가기
+```sh
+git revert commitNumber
+```
+### branch 충돌(conflicts)
+##### 기준 branch와 대상 branch가 같은 파일의 같은 부분을 수정할 때 충돌 발생
 
 
 
