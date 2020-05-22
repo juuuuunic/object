@@ -22,21 +22,61 @@ git remote add origin https://github.com/경로
 git remote -v
 ~~~
 
-## VS Code
-1. 커밋하기(commit)
-~~~bash
-git commit -m "first commit" 
-# 왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋'을 눌러도 된다.
+## cmd 또는 터미널창
+1. git에 올릴 폴더 및 파일 추가
 ~~~
-2. 푸쉬(push)
-~~~bash
+git add "폴더 및 파일 이름"
+~~~
+2. 커밋하기(commit)
+~~~
+git commit -m "커밋 메세지"
+~~~
+3 푸쉬하기(push)
+~~~
 git push -u origin master
-# 왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시' 눌러도 된다.
 ~~~
+4. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
+
+
+> VS code
+![vscode01](https://user-images.githubusercontent.com/57767002/82643685-efa06280-9c4a-11ea-9e33-cab1370e3fd0.png)
+> Atom
+![atom11](https://user-images.githubusercontent.com/57767002/82643688-f038f900-9c4a-11ea-9ee7-28ee08dfcda1.png)
+> Atom의 경우 터미널 패키지를 사용하는 것이 용이하다.
+![atom01](https://user-images.githubusercontent.com/57767002/82638173-486afd80-9c41-11ea-847b-67a3381f14b5.PNG)
+~~~
+> 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
+> default 터미널 실행키: Ctrl+`(숫자1 왼쪽버튼) 또는 상단 메뉴바 Pakages > platformio-ide-terminal > Toggle
+> 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
+> 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
+~~~
+
+## 패널 사용하기
+### VS Code
+1. init을 하면 왼쪽 패널에 파일 및 폴더 개수가 뜬다.
+
+
+![vscode02](https://user-images.githubusercontent.com/57767002/82644967-1cee1000-9c4d-11ea-80d6-858c5a7626b0.png)
+![vscode03](https://user-images.githubusercontent.com/57767002/82644969-1d86a680-9c4d-11ea-9e72-30effb635bac.png)
+
+2. 커밋하기(commit)
+~~~bash
+왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋' 후 스테이징을 하면 왼쪽 패널 위에 작은 바가 생성된다.
+~~~
+![vscode04](https://user-images.githubusercontent.com/57767002/82645028-355e2a80-9c4d-11ea-9fab-a0aeb4decd90.png)
+![vscode05](https://user-images.githubusercontent.com/57767002/82645073-46a73700-9c4d-11ea-831f-7deccfe97905.png)
+![vscode06](https://user-images.githubusercontent.com/57767002/82645142-6179ab80-9c4d-11ea-9582-39895aba9140.png)
+3. 터미널에서 리모트 경로를 추가한다.
+4. 푸쉬(push)
+~~~bash
+왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시'
+~~~
+![vscode08](https://user-images.githubusercontent.com/57767002/82645645-2a57ca00-9c4e-11ea-9f71-32f39bdb6805.png)
+
+
 3. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
-## Atom
-#### 깃허브 패키지로 깃허브 시작하기
+### Atom
 1. 깃허브 패키지 설치
 
 
@@ -76,36 +116,6 @@ git push -u origin master
 
 
 7. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
-
-#### 터미널창으로 깃허브 시작하기
-1. 터미널 패키지 설치
-
-
-![atom01](https://user-images.githubusercontent.com/57767002/82638173-486afd80-9c41-11ea-847b-67a3381f14b5.PNG)
-~~~
-> 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
-> default 터미널 실행키: Ctrl+`(숫자1 왼쪽버튼) 또는 상단 메뉴바 Pakages > platformio-ide-terminal > Toggle
-> 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
-> 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
-~~~
-2. git에 올릴 폴더 및 파일 추가
-~~~
-git add "폴더 및 파일 이름"
-~~~
-3. 커밋하기(commit)
-~~~
-git commit -m "커밋 메세지"
-~~~
-![atom07](https://user-images.githubusercontent.com/57767002/82638683-5e2cf280-9c42-11ea-934e-122dbf01b92a.png)
-4. 푸쉬하기(push)
-~~~
-git push -u origin master
-~~~
-5. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
-
-
-![atom11](https://user-images.githubusercontent.com/57767002/82641878-02656800-9c48-11ea-9089-ea126a0404f5.png)
-
 
 
 Git 협업하기
