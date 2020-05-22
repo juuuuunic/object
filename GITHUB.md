@@ -9,24 +9,20 @@ Git 최초 설정
 git config --global user.email "깃허브 가입 이메일"
 git config --global user.name "깃허브 가입 이름"
 ~~~
-3. 사용하는 툴에서 프로젝트 폴더를 열고 터미널 또는 cmd 창에서 아래의 명령을 실행
+
+## VS Code
+1. vscode 에서 작업폴더 열기
+2. 터미널 또는 cmd 창에서 이닛하기(init)
 ~~~bash
-git init.
+git init
 # init을 하면 작업중인 폴더에 .git이 생성됨
 git remote add origin https://github.com/경로
-# 본인의 github에서 가장 긴 줄을 복사하여 아래에 붙여 실행
+# 레파지토리 생성할 때 같이 생성됨
 ~~~
-4. 리모트 생성 확인
+3. 리모트 생성 확인
 ~~~bash
 git remote -v
 ~~~
-5. 프로젝트 연결하기
-~~~bash
-git clone https://github.com/프로젝트 경로
-~~~
-
-### VS Code
-1. 작업폴더를 vscode 에서 폴더열기
 2. 커밋하기(commit)
 ~~~bash
 git commit -m "first commit" 
@@ -39,26 +35,73 @@ git push -u origin master
 ~~~
 4. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
-### Atom
+## Atom
+#### 깃허브 패키지로 깃허브 시작하기
+1. 깃허브 패키지 설치
+![atom02](https://user-images.githubusercontent.com/57767002/82638296-9122b680-9c41-11ea-91d9-81d08f5e3dab.PNG)
+~~~
+> git-plus(akonwi)
+> 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
+> Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
+~~~
+2. Atom 에서 작업폴더 열기
+4. 깃허브 패키지를 열고 오른쪽 패널에서 경로를 선택, 레파지토리 생성
+
+
+![atom04](https://user-images.githubusercontent.com/57767002/82638585-2920a000-9c42-11ea-8d87-2a03212e5936.PNG)
+
+
+3. 오른쪽 패널 Unstaged Chanhes에 생성되어있던 파일들이 뜸
+
+
+![atom06](https://user-images.githubusercontent.com/57767002/82638623-405f8d80-9c42-11ea-8d14-f0adb0e9a8d9.PNG)
+
+4. Unstaged Changes에서 원하는 파일 및 폴더 오른쪽 클릭 'Stage'
+
+
+![atom07](https://user-images.githubusercontent.com/57767002/82638683-5e2cf280-9c42-11ea-934e-122dbf01b92a.png)
+
+
+5. 오른쪽 패널 Staged Changes에서 원하는 파일 및 폴더 선택 후 아래 텍스트 창에 커밋메세지 입력, 'Commit to master' 클릭
+
+
+![atom09](https://user-images.githubusercontent.com/57767002/82638913-a2b88e00-9c42-11ea-93ab-517e84c50ee0.png)
+
+
+6. Atom 하단 Fetch 오른쪽 클릭 Push 선택 또는 Alt+g+p
+
+
+![atom10](https://user-images.githubusercontent.com/57767002/82638951-b95ee500-9c42-11ea-9499-3c4e1e5c2ec6.png)
+
+
+7. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
+
+#### 터미널창으로 깃허브 시작하기
 1. 터미널 패키지 설치
+![atom01](https://user-images.githubusercontent.com/57767002/82638173-486afd80-9c41-11ea-847b-67a3381f14b5.PNG)
 ~~~
 > 다운로드 수 多: platformio-ide-terminal(2020.02 기준)
 > default 터미널 실행키: Ctrl+`(숫자1 왼쪽버튼) 또는 상단 메뉴바 Pakages > platformio-ide-terminal > Toggle
 > 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
 > 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
 ~~~
-2. 깃허브 패키지 설치
+2. Atom 에서 작업폴더 열기
+3. git에 올릴 폴더 및 파일 추가
 ~~~
-> git-plus(akonwi)
-> 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
-> Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
+git add "폴더 및 파일 이름"
 ~~~
-3. Atom 에서 작업폴더 열기
-4. 오른쪽 패널 Unstaged Chanhes에 생성되어있던 파일들이 뜸
-5. 터미널 창에 git add "폴더 및 파일 이름" 또는 오른쪽 패널 Unstaged Changes에서 원하는 파일 및 폴더 오른쪽 클릭 'Stage'
-6. 터미널 창에 git commit-m "커밋 메세지" 또는 오른쪽 패널 Staged Changes에서 원하는 파일 및 폴더 선택 후 아래 텍스트 창에 커밋메세지 입력, 'Commit to master' 클릭
-7. Atom 하단 Fetch 오른쪽 클릭 Push 선택 또는 Alt+g+p
-4. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
+4. 커밋하기(commit)
+~~~
+git commit-m "커밋 메세지"
+~~~
+![atom07](https://user-images.githubusercontent.com/57767002/82638683-5e2cf280-9c42-11ea-934e-122dbf01b92a.png)
+5. 푸쉬하기(push)
+~~~
+git push -u origin master
+~~~
+6. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
+
+![atom11](https://user-images.githubusercontent.com/57767002/82640992-946c7100-9c46-11ea-975a-aa7f63f21e29.png)
 
 
 Git 협업하기
