@@ -1,25 +1,43 @@
-# 각종 설치 및 팁 정리
+# Git을 이용한 프로젝트 관리
 
 Git 최초 설정
 --
 0. git-scm 설치[https://git-scm.com/download]
 1. github 에서 new repository 를  실행 
-_(*Initialize this repository with a README를 선택하면 글쓰는 공간이 된다.)_
+2. git을 처음 설치하는 컴퓨터에서는 아래의 명령을 한 번만 실행
+~~~
+git config --global user.email "깃허브 가입 이메일"
+git config --global user.name "깃허브 가입 이름"
+~~~
+3. 사용하는 툴에서 프로젝트 폴더를 열고 터미널 또는 cmd 창에서 아래의 명령을 실행
+~~~
+git init.
+# init을 하면 작업중인 폴더에 .git이 생성됨
+git remote add origin https://github.com/경로
+# 본인의 github에서 가장 긴 줄을 복사하여 아래에 붙여 실행
+~~~
+4. 리모트 생성 확인
+~~~
+git remote -v
+~~~
+5. 프로젝트 연결하기
+~~~
+git clone https://github.com/프로젝트 경로
+~~~
 
 ### VS Code
 1. 작업폴더를 vscode 에서 폴더열기
-2. 터미털 창에서 git init
-3. 작업폴더에 .gitignore 파일 생성됨
-4. git bash 또는 cmd창에서 git config --global user.email "signUp_email@email.com" 세팅
-+ vscode에서 처음 한번만 실행
-+ 4번 과정에서 왼쪽 패널의 파일이 비어있어야 함.(커밋이 완료된 상태)
-5. git commit -m "first commit" 
-+ 왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋'을 눌러도 된다.
-6. git remote add origin https://github.com/레파지토리 경로
-+ 경로는 깃허브에서 레파지토리를 생성하면 나옴
-7. git push -u origin master
-+ 왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시' 눌러도 된다.
-8. 생성한 레파지토리 화면 새로고침하면 레파지토리 생성 끗!
+2. 커밋하기(commit)
+~~~
+git commit -m "first commit" 
+# 왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋'을 눌러도 된다.
+~~~
+3. 푸쉬(push)
+~~~
+git push -u origin master
+# 왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시' 눌러도 된다.
+~~~
+4. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
 ### Atom
 1. 터미널 패키지 설치
@@ -32,32 +50,12 @@ _(*Initialize this repository with a README를 선택하면 글쓰는 공간이 
 + 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
 + Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
 3. Atom 에서 작업폴더 열기
-4. 터미털 창에서 git init
-5. 왼쪽 패널을 보면 작업폴더에 .git 폴더 생성됨
-6. git bash 또는 cmd창에서 아이디 및 메일세팅
-+ 처음 한번만 실행
-+ git config user.name "github name"
-+ git config user.email github_mail@github.com
-+ git remote add origin https://github.com/레파지토리 경로
-+ 경로는 깃허브에서 레파지토리를 생성하면 나옴
-+ git remote -v(리모트 생성 확인)
-7. 오른쪽 패널 Unstaged Chanhes에 생성되어있던 파일들이 뜸
-8. 터미널 창에 git add "폴더 및 파일 이름" 또는 오른쪽 패널 Unstaged Changes에서 원하는 파일 및 폴더 오른쪽 클릭 'Stage'
-9. 터미널 창에 git commit-m "커밋 메세지" 또는 오른쪽 패널 Staged Changes에서 원하는 파일 및 폴더 선택 후 아래 텍스트 창에 커밋메세지 입력, 'Commit to master' 클릭
-10. Atom 하단 Fetch 오른쪽 클릭 Push 선택 또는 Alt+g+p
-11. 생성한 레파지토리 화면 새로고침하면 레파지토리 생성 끗!
+4. 오른쪽 패널 Unstaged Chanhes에 생성되어있던 파일들이 뜸
+5. 터미널 창에 git add "폴더 및 파일 이름" 또는 오른쪽 패널 Unstaged Changes에서 원하는 파일 및 폴더 오른쪽 클릭 'Stage'
+6. 터미널 창에 git commit-m "커밋 메세지" 또는 오른쪽 패널 Staged Changes에서 원하는 파일 및 폴더 선택 후 아래 텍스트 창에 커밋메세지 입력, 'Commit to master' 클릭
+7. Atom 하단 Fetch 오른쪽 클릭 Push 선택 또는 Alt+g+p
+4. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
-
-Git 설정 방법
---
-~~~
-git init
-// git commit -m "first commit"
-// 위의 코드보다는 vscode 의 모두 커밋을 실행
-git remote add origin https://github.com/booldook/sample.git
-// git push -u origin master
-// 위의 코드보다는 vscode 의 푸시를 실행
-~~~
 
 Git 협업하기
 --
