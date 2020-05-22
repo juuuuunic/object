@@ -9,31 +9,31 @@ Git 최초 설정
 git config --global user.email "깃허브 가입 이메일"
 git config --global user.name "깃허브 가입 이름"
 ~~~
-
-## VS Code
-1. vscode 에서 작업폴더 열기
-2. 터미널 또는 cmd 창에서 이닛하기(init)
+3. 사용하는 툴에서 작업폴더 열기
+4. 터미널 또는 cmd 창에서 이닛하기(init)
 ~~~bash
 git init
 # init을 하면 작업중인 폴더에 .git이 생성됨
 git remote add origin https://github.com/경로
 # 레파지토리 생성할 때 같이 생성됨
 ~~~
-3. 리모트 생성 확인
+5. 리모트 생성 확인
 ~~~bash
 git remote -v
 ~~~
-2. 커밋하기(commit)
+
+## VS Code
+1. 커밋하기(commit)
 ~~~bash
 git commit -m "first commit" 
 # 왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋'을 눌러도 된다.
 ~~~
-3. 푸쉬(push)
+2. 푸쉬(push)
 ~~~bash
 git push -u origin master
 # 왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시' 눌러도 된다.
 ~~~
-4. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
+3. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
 ## Atom
 #### 깃허브 패키지로 깃허브 시작하기
@@ -46,8 +46,7 @@ git push -u origin master
 > 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
 > Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
 ~~~
-2. Atom 에서 작업폴더 열기
-4. 깃허브 패키지를 열고 오른쪽 패널에서 경로를 선택, 레파지토리 생성
+2. 깃허브 패키지를 열고 오른쪽 패널에서 경로를 선택, 레파지토리 생성
 
 
 ![atom04](https://user-images.githubusercontent.com/57767002/82638585-2920a000-9c42-11ea-8d87-2a03212e5936.PNG)
@@ -89,21 +88,20 @@ git push -u origin master
 > 터미널 테마 및 키바인딩 설정은 Pakages > platformio-ide-terminal 에서 변경가능
 > 터미널을 굳이 사용하지 않고 cmd창으로도 가능함
 ~~~
-2. Atom 에서 작업폴더 열기
-3. git에 올릴 폴더 및 파일 추가
+2. git에 올릴 폴더 및 파일 추가
 ~~~
 git add "폴더 및 파일 이름"
 ~~~
-4. 커밋하기(commit)
+3. 커밋하기(commit)
 ~~~
 git commit -m "커밋 메세지"
 ~~~
 ![atom07](https://user-images.githubusercontent.com/57767002/82638683-5e2cf280-9c42-11ea-934e-122dbf01b92a.png)
-5. 푸쉬하기(push)
+4. 푸쉬하기(push)
 ~~~
 git push -u origin master
 ~~~
-6. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
+5. 생성한 레파지토리 화면 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 
 
 ![atom11](https://user-images.githubusercontent.com/57767002/82641878-02656800-9c48-11ea-9089-ea126a0404f5.png)
