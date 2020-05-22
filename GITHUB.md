@@ -5,35 +5,35 @@ Git 최초 설정
 0. git-scm 설치[https://git-scm.com/download]
 1. github 에서 new repository 를  실행 
 2. git을 처음 설치하는 컴퓨터에서는 아래의 명령을 한 번만 실행
-~~~
+~~~bash
 git config --global user.email "깃허브 가입 이메일"
 git config --global user.name "깃허브 가입 이름"
 ~~~
 3. 사용하는 툴에서 프로젝트 폴더를 열고 터미널 또는 cmd 창에서 아래의 명령을 실행
-~~~
+~~~bash
 git init.
 # init을 하면 작업중인 폴더에 .git이 생성됨
 git remote add origin https://github.com/경로
 # 본인의 github에서 가장 긴 줄을 복사하여 아래에 붙여 실행
 ~~~
 4. 리모트 생성 확인
-~~~
+~~~bash
 git remote -v
 ~~~
 5. 프로젝트 연결하기
-~~~
+~~~bash
 git clone https://github.com/프로젝트 경로
 ~~~
 
 ### VS Code
 1. 작업폴더를 vscode 에서 폴더열기
 2. 커밋하기(commit)
-~~~
+~~~bash
 git commit -m "first commit" 
 # 왼쪽 패널(소스제어)에서 ···(기타작업...) '모두 커밋'을 눌러도 된다.
 ~~~
 3. 푸쉬(push)
-~~~
+~~~bash
 git push -u origin master
 # 왼쪽 패널(소스제어)에서 ···(기타작업...) '푸시' 눌러도 된다.
 ~~~
