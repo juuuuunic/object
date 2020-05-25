@@ -1,6 +1,7 @@
 # Git을 이용한 프로젝트 관리
 
-Git 최초 설정
+Git 설정하기
+## 공통
 --
 0. git-scm 설치[https://git-scm.com/download]
 1. github 에서 new repository 를  실행 
@@ -185,7 +186,15 @@ git revert commitNumber
 ### branch 충돌(conflicts)
 ##### 기준 branch와 대상 branch가 같은 파일의 같은 부분을 수정할 때 충돌 발생
 
-
+clone 
+# git clone 이후에 작업할 사항
+~~~bash
+# Boilerplate를 클로닝 한다.
+git clone https://github.com/booldook/booldook-html5
+# 폴더에서 .git 삭제
+# 아래의 명령을 실행해서 jquery 자동완성 등록
+npm i @types/jquery
+~~~
 
 # GIT 팁 모음
 ### 20개 내외의 명령어로 Git 사용하기
