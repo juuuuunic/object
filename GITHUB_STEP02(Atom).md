@@ -124,3 +124,19 @@ git push -u origin master
 ~~~
 __9.__ repo 화면을 새로고침하면 레파지토리가 생성된 것을 확인할 수 있다.
 __10.__ 이후 repo를 생성한 작업은 [commit]과 [push]만 반복해주면 된다.
+
+## git clone
++ 다른 프로젝트에 참여하거나(Contribute) git 저장소를 복사하고 싶을 때 사용하는 명령어
++ git clone을 실행하면 프로젝트의 히스토리를 전부 받아오기 때문에 서버의 디스크가 망가져도 클라이언트 저장소를 가져다가 복구할 수 있다.
+~~~ bash
+git clone 복사한repository주소
+~~~
+1. 소스를 복사(저장)하고자 하는 경로에 폴더를 만든다. 
+2. 복사(저장)하고자 하는 repository를 찾아 [Clone or download] 버튼을 누른다.
+>> ![git15](https://user-images.githubusercontent.com/57767002/82788296-2670b580-9ea3-11ea-9337-fd48ba546d52.png)
+3. Download ZIP 후 생성한 폴더에 이동시킨다.
+3-1. 박스에 뜨는 주소를 복사한다.
+4. cmd 창에서 생성한 폴더의 경로에 들어간다.
+5. 명령어를 실행한다.
+>> ![git16](https://user-images.githubusercontent.com/57767002/82788921-5ec4c380-9ea4-11ea-8e47-c50c2885fc1f.png)
+
