@@ -94,7 +94,7 @@ watch command는 scss 파일의 변경을 감지하여 변경될 때마다 scss 
     node-sass --watch src/sass --output dist/css
     ~~~
 
-### Sass Grammar
+### Sass Syntax
 + SassScript [https://poiemaweb.com/sass-script]
 + Sass CSS Extensions [https://poiemaweb.com/sass-css-extention]
 + Sass Built-in Function [https://poiemaweb.com/sass-built-in-function]
