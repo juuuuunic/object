@@ -4,7 +4,7 @@ Git을 이용한 프로젝트 관리
 ### git 처음 설정하는 컴퓨터(or laptop)
 __1.__ 깃허브 패키지 설치
 >> ![atom02](https://user-images.githubusercontent.com/57767002/82638296-9122b680-9c41-11ea-91d9-81d08f5e3dab.PNG)
-~~~
+~~~bash
 # git-plus(akonwi)
 # 설치 후 Setting의 아래 명령어(Command) 모음을 볼 수 있음
 # Pakages > Toggle git tab 또는 Ctrl+Shift+9를 누르면 오른쪽에 패널이 뜬다.
