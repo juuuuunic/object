@@ -38,7 +38,7 @@ SASS(SCSS)사용하기_Node-sass
    # node-sass input-folder-path -o output-folder-path
    node-sass src/sass --output dist/css
    ~~~
-   ![04](https://user-images.githubusercontent.com/57767002/82981835-d838ef00-a027-11ea-83cc-0a3e16d57825.jpg)
+   ![04](https://user-images.githubusercontent.com/57767002/82982216-a70cee80-a028-11ea-952f-2d3f08c3b41f.jpg)
    
    
 ### Commands 
