@@ -39,7 +39,12 @@ SASS(SCSS)사용하기_Node-sass
    node-sass src/sass --output dist/css
    ~~~
    ![04](https://user-images.githubusercontent.com/57767002/82982216-a70cee80-a028-11ea-952f-2d3f08c3b41f.jpg)
+6. 작업 끝내기
+   ~~~bash
+   Ctrl + c
    
+   # 작업을 끝내면 터미널 입력창이 다시 나타난다.
+   ~~~
    
 ### Commands 
 1. Style
