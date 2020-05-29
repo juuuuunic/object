@@ -92,7 +92,7 @@ SASS(SCSS)사용하기_Node-sass
 ### ERROR
   ~~~bash
   # 현재 VS Code에서 --watch 후 저장을 하면 한 번에 complie 되지 않고 몇 번의 에러 후 실행된다.
-  # 에러에 대해서는 추후 추가 예정
+  # 에러에 대해서는 추후 추가 예정(2020.05.27 기준)
   ~~~
 ![07](https://user-images.githubusercontent.com/57767002/82981842-da02b280-a027-11ea-9127-cebcc0808872.jpg)
 
