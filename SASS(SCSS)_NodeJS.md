@@ -111,7 +111,7 @@ SASS(SCSS)사용하기_Node-sass
      node-sass --output-style compressed src/sass --output dist/css
      ~~~
 
-     ![05](https://user-images.githubusercontent.com/57767002/82981839-d96a1c00-a027-11ea-86b9-b3a3bc5ee799.jpg)
+     ![82981839-d96a1c00-a027-11ea-86b9-b3a3bc5ee799](https://user-images.githubusercontent.com/57767002/83384552-77902480-a422-11ea-8aa1-33ae0971b890.jpg)
   
 2. watch: scss 파일의 변경을 감지하여 변경될 때마다 scss 파일을 컴파일하여 css 파일을 자동 업데이트
 
