@@ -59,11 +59,11 @@ SASS(SCSS)사용하기_Ruby
    ~~~bash
    Crtl + S
    
-   # compile 시 잘못된 부분이 있다면 error가 뜨면서 그 부분을 알림
+   # compile 시 잘못된 부분이 있으면 error의 원인을 알려준다.
    ~~~
    ![r16](https://user-images.githubusercontent.com/57767002/83368781-100fb000-a3f5-11ea-819e-0a95a6ffe09e.jpg)
    
-   ![r19](https://user-images.githubusercontent.com/57767002/83369983-f83a2b00-a3f8-11ea-9750-b4dd775d87b8.jpg)
+   ![r19](https://user-images.githubusercontent.com/57767002/83384018-511db980-a421-11ea-8dbd-736365ceefdc.jpg)
 
 7. 작업 끝내기
 
