@@ -105,7 +105,7 @@ SASS(SCSS)사용하기_Node-sass
   # 해결 방법: [C드라이브 \ Users \ (사용자명) \ AppData \ Roaming \ npm \ node_modules \ node-sass \ lib \ render.js] 
                버전 교체 (2020.06.01 기준)
   ~~~
-  [해결방법 보러가기](https://github.com/sass/node-sass/issues/1894#issuecomment-390199128)
+  __[해결방법 보러가기](https://github.com/sass/node-sass/issues/1894#issuecomment-390199128)__
   
   ![제목-없음-2](https://user-images.githubusercontent.com/57767002/83376278-b6b37b00-a40c-11ea-8c2c-89f3f5e6f1cf.jpg)
 
