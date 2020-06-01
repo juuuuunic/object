@@ -14,7 +14,7 @@ SASS(SCSS)사용하기_Node-sass
    npm list
    npm list -g
 
-   # node.js를 설치하면 npm은 자동으로 설치된다.
+   # node.js를 설치하면 npm은 자동으로 설치
    ~~~
    ![01](https://user-images.githubusercontent.com/57767002/82981843-da02b280-a027-11ea-8fe9-9a0ce5956621.jpg)
    
@@ -35,11 +35,11 @@ SASS(SCSS)사용하기_Node-sass
    cd 작업경로
 
    # 특정 파일을 특정 파일 이름으로 컴파일
-   # Compile foo.scss to bar.css
-   node-sass foo.scss > bar.css
+   # node-sass [경로/컴파일할 파일명.확장자] [경로/컴파일될 파일명.확장자]
+   node-sass src/sass/common.scss --output dist/css/common.css
 
    # 폴더 내의 모든 파일을 컴파일
-   # node-sass input-folder-path -o output-folder-path
+   # node-sass [경로/컴파일할 파일이 들어있는 폴더명] [경로/컴파일될 파일이 들어있는 폴더명]
    node-sass src/sass --output dist/css
    ~~~
    ![04](https://user-images.githubusercontent.com/57767002/82982216-a70cee80-a028-11ea-952f-2d3f08c3b41f.jpg)
