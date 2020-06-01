@@ -102,7 +102,7 @@ SASS(SCSS)사용하기_Node-sass
    + compact: 여러 룰셋을 한 줄로 나타내는 스타일
 
      ~~~bash
-     node-sass --output-style nested src/sass --output dist/css
+     node-sass --output-style compact src/sass --output dist/css
      ~~~
 
    + compressed: 가능한 빈공간이 없는 압축된 스타일
