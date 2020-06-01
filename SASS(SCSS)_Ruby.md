@@ -54,7 +54,7 @@ SASS(SCSS)사용하기_Ruby
      cd 작업경로
 
      # sass --watch [경로/컴파일할 파일명.scss]:[경로/컴파일될 파일명.css]
-     sass --watch src/sass:dist/css
+     sass --watch src/sass/common.scss dist/css/common.css
      ~~~
      ![r12](https://user-images.githubusercontent.com/57767002/83368724-d2128c00-a3f4-11ea-8fa5-68182eb9ea61.jpg)
   
@@ -63,7 +63,7 @@ SASS(SCSS)사용하기_Ruby
      ~~~bash
      cd 작업경로
 
-     # sass [경로/컴파일할 파일명.scss]:[경로/컴파일될 파일명.css]
+     # sass [경로/컴파일할 파일]:[경로/컴파일될 파일]
      sass --watch src/sass:dist/css
      ~~~
      ![r14](https://user-images.githubusercontent.com/57767002/83368665-9972b280-a3f4-11ea-86cd-63060a3117d3.jpg)
