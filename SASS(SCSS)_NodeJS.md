@@ -60,7 +60,7 @@ SASS(SCSS)사용하기_Node-sass
      node-sass src/sass --output dist/css
      ~~~
      
-     ![s](https://user-images.githubusercontent.com/57767002/83382371-eae36780-a41d-11ea-8dcd-c622c90359be.jpg)
+     ![s](https://user-images.githubusercontent.com/57767002/83384306-fa64af80-a421-11ea-936b-fc78e642d6ca.jpg)
 
 6. 저장하기
    
