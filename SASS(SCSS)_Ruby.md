@@ -35,7 +35,7 @@ SASS(SCSS)사용하기_Ruby
    gem sources -r https://rubygems.org/
    gem sources -a http://rubygems.org/
    # 일부 PC에서 에러가 발생하는 경우 위의 명령어 중 하나를 선택해 입력 후 다시 [gem install sass]
-     [회복맨 블로그 참조](https://recoveryman.tistory.com/276)
+   # [회복맨 블로그 참조](https://recoveryman.tistory.com/276)
    ~~~
    ![r09](https://user-images.githubusercontent.com/57767002/83222699-e4ea4e00-a1b3-11ea-9386-71711c1cd97f.jpg)
    
@@ -52,7 +52,7 @@ SASS(SCSS)사용하기_Ruby
    ~~~bash
    # sass [경로/컴파일할 파일경로.확장자] [경로/컴파일될 파일경로.확장자]
    ~~~
-   ![r20](https://user-images.githubusercontent.com/57767002/83377696-64288d80-a411-11ea-826f-26b67ff16cf7.jpg)
+   ![r20](https://user-images.githubusercontent.com/57767002/83385311-f46fce00-a423-11ea-8074-199fcedc61ef.jpg)
 
 6. 저장하기
 
@@ -105,7 +105,7 @@ SASS(SCSS)사용하기_Ruby
      sass --style nested common.scss common.css
      ~~~
    
-     ![r13](https://user-images.githubusercontent.com/57767002/83368682-adb6af80-a3f4-11ea-9add-f49a42831ced.jpg)
+     ![r13](https://user-images.githubusercontent.com/57767002/83385314-f46fce00-a423-11ea-8209-d63d4635356f.jpg)
      
 2. watch: scss 파일의 변경을 감지하여 변경될 때마다 scss 파일을 컴파일하여 css 파일을 자동 업데이트
 
@@ -117,17 +117,17 @@ SASS(SCSS)사용하기_Ruby
      # sass --watch [경로/컴파일할 파일명.확장자]:[경로/컴파일될 파일명.확장자]
      sass --watch src/sass/common.scss dist/css/common.css
      ~~~
-     ![r18](https://user-images.githubusercontent.com/57767002/83369984-f96b5800-a3f8-11ea-8e70-239657eb7980.jpg)
+     ![r18](https://user-images.githubusercontent.com/57767002/83385315-f5086480-a423-11ea-8cec-8c48966ad07a.jpg)
   
-  + 디렉토리 단위 watch
+   + 디렉토리 단위 watch
   
-     ~~~bash
-     cd 작업경로
+      ~~~bash
+      cd 작업경로
 
-     # sass [경로/컴파일할 폴더]:[경로/컴파일될 폴더]
-     sass --watch src/sass:dist/css
-     ~~~
-     ![r14](https://user-images.githubusercontent.com/57767002/83368665-9972b280-a3f4-11ea-86cd-63060a3117d3.jpg)
+      # sass [경로/컴파일할 폴더]:[경로/컴파일될 폴더]
+      sass --watch src/sass:dist/css
+      ~~~
+      ![r14](https://user-images.githubusercontent.com/57767002/83368665-9972b280-a3f4-11ea-86cd-63060a3117d3.jpg)
   
 3. style + watch 동시에 명령하기
 
@@ -135,7 +135,7 @@ SASS(SCSS)사용하기_Ruby
    # sass --watch --style compressed [경로/컴파일할 파일명.확장자] [경로/컴파일될 파일명.확장자]
    sass --watch --style nested common.scss common.css
    ~~~
-   ![r15](https://user-images.githubusercontent.com/57767002/83368600-66302380-a3f4-11ea-8f2b-1107d9721ea3.jpg)
+   ![r15](https://user-images.githubusercontent.com/57767002/83385305-f33ea100-a423-11ea-8b10-58d5d23f8d7e.jpg)
 
   
 
