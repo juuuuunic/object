@@ -52,7 +52,7 @@ SASS(SCSS)사용하기_Ruby
    ~~~bash
    # sass [경로/컴파일할 파일경로.확장자] [경로/컴파일될 파일경로.확장자]
    ~~~
-  ![r20](https://user-images.githubusercontent.com/57767002/83377696-64288d80-a411-11ea-826f-26b67ff16cf7.jpg)
+   ![r20](https://user-images.githubusercontent.com/57767002/83377696-64288d80-a411-11ea-826f-26b67ff16cf7.jpg)
 
 6. 저장하기
 
