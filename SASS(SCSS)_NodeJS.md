@@ -103,7 +103,7 @@ SASS(SCSS)사용하기_Node-sass
   
   ~~~bash
   # 해결 방법: [C드라이브 \ Users \ (사용자명) \ AppData \ Roaming \ npm \ node_modules \ node-sass \ lib \ render.js] 
-               버전 교체 (2020.06.01 기준)
+  #            버전 교체 (2020.06.01 기준)
   ~~~
   __[해결방법 보러가기](https://github.com/sass/node-sass/issues/1894#issuecomment-390199128)__
   
