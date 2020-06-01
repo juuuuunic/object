@@ -96,10 +96,17 @@ SASS(SCSS)사용하기_Node-sass
   
 ### ERROR
   ~~~bash
-  # 현재 --watch 후 저장을 하면 한 번에 complie 되지 않고 몇 번의 에러 후 실행된다.
+  # --watch 후 저장을 하면 한 번에 complie 되지 않고 몇 번의 에러 후 진행
   # 에러에 대해서는 추후 추가 예정(2020.05.27 기준)
   ~~~
-![07](https://user-images.githubusercontent.com/57767002/82981842-da02b280-a027-11ea-9127-cebcc0808872.jpg)
+  ![07](https://user-images.githubusercontent.com/57767002/82981842-da02b280-a027-11ea-9127-cebcc0808872.jpg)
+  
+  ~~~bash
+  # 해결 방법: [C드라이브 \ Users \ (사용자명) \ AppData \ Roaming \ npm \ node_modules \ node-sass \ lib \ render.js] 
+               버전 교체 (2020.06.01 기준)
+  ~~~
+  참조 [https://github.com/sass/node-sass/issues/1894#issuecomment-390199128]
+  ![제목-없음-2](https://user-images.githubusercontent.com/57767002/83376278-b6b37b00-a40c-11ea-8c2c-89f3f5e6f1cf.jpg)
 
 
 
