@@ -69,6 +69,7 @@ SASS(SCSS)사용하기_Node-sass
    
    # compile 시 잘못된 부분이 있으면 error의 원인을 알려준다.
    ~~~
+   ![k](https://user-images.githubusercontent.com/57767002/83383742-b3c28580-a420-11ea-8a5d-b58a7e38d025.jpg)
    
    ![h](https://user-images.githubusercontent.com/57767002/83382380-f040b200-a41d-11ea-8069-0ae9f07cbbfe.jpg)
 
