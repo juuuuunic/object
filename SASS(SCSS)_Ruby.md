@@ -56,8 +56,7 @@ SASS(SCSS)사용하기_Ruby
      # sass --watch [경로/컴파일할 파일명.scss]:[경로/컴파일될 파일명.css]
      sass --watch src/sass/common.scss dist/css/common.css
      ~~~
-     ![r12](https://user-images.githubusercontent.com/57767002/83368724-d2128c00-a3f4-11ea-8fa5-68182eb9ea61.jpg)
-  
+     ![r18](https://user-images.githubusercontent.com/57767002/83369984-f96b5800-a3f8-11ea-8e70-239657eb7980.jpg)
   
   + 디렉토리 단위 watch
      ~~~bash
@@ -67,6 +66,12 @@ SASS(SCSS)사용하기_Ruby
      sass --watch src/sass:dist/css
      ~~~
      ![r14](https://user-images.githubusercontent.com/57767002/83368665-9972b280-a3f4-11ea-86cd-63060a3117d3.jpg)
+     
+  + Error
+    ~~~bash
+    # compile 시 잘못된 부분이 있다면 error가 뜨면서 그 부분을 알림
+    ~~~
+    ![r19](https://user-images.githubusercontent.com/57767002/83369983-f83a2b00-a3f8-11ea-9750-b4dd775d87b8.jpg)
 
 6. 저장하기
    ~~~bash
