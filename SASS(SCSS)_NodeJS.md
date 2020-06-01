@@ -6,6 +6,7 @@ SASS(SCSS)사용하기_Node-sass
 
 ### Install
 1. Node.js 설치 [https://nodejs.org/en/]
+
 2. Node.js 확인(필수 X)
    ~~~bash
    node -v
@@ -16,16 +17,19 @@ SASS(SCSS)사용하기_Node-sass
    # node.js를 설치하면 npm은 자동으로 설치된다.
    ~~~
    ![01](https://user-images.githubusercontent.com/57767002/82981843-da02b280-a027-11ea-8fe9-9a0ce5956621.jpg)
+   
 3. node-sass 설치
    ~~~bash
     npm install -g node-sass
    ~~~
    ![02](https://user-images.githubusercontent.com/57767002/82981844-da9b4900-a027-11ea-834e-f3bc528e1384.jpg)
+   
 4. node-sass 확인(필수 X)
    ~~~bash
     node-sass -v
    ~~~
    ![03](https://user-images.githubusercontent.com/57767002/82981846-da9b4900-a027-11ea-9b0a-11ea9ca46067.jpg)
+   
 5. compile
    ~~~bash
    cd 작업경로
@@ -39,6 +43,7 @@ SASS(SCSS)사용하기_Node-sass
    node-sass src/sass --output dist/css
    ~~~
    ![04](https://user-images.githubusercontent.com/57767002/82982216-a70cee80-a028-11ea-952f-2d3f08c3b41f.jpg)
+   
 6. 작업 끝내기
    ~~~bash
    Ctrl + c
