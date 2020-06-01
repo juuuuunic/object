@@ -49,63 +49,78 @@ SASS(SCSS)사용하기_Ruby
    
 5. compile
 
-   ~~~bash
-   # 작업을 하는 해당 디렉토리가 아니라면 에러가 출력되기 때문에 '정확한' 디렉토리 에서 compile
-   cd 작업경로
+  + 파일 단위 watch
+     ~~~bash
+     cd 작업경로
 
-   # 특정 파일을 특정 파일 이름으로 컴파일
-   # 폴더 내, 모든 파일 컴파일 지원X
-   # sass 경로/컴파일할 파일명.scss 경로/컴파일될 파일명.css
-   sass src/sass/common.scss dist/css/common.css
+     # sass --watch [경로/컴파일할 파일명.scss]:[경로/컴파일될 파일명.css]
+     sass --watch src/sass:dist/css
+     ~~~
+     ![r12](https://user-images.githubusercontent.com/57767002/83368724-d2128c00-a3f4-11ea-8fa5-68182eb9ea61.jpg)
+  
+  
+  + 디렉토리 단위 watch
+     ~~~bash
+     cd 작업경로
+
+     # sass [경로/컴파일할 파일명.scss]:[경로/컴파일될 파일명.css]
+     sass --watch src/sass:dist/css
+     ~~~
+     ![r14](https://user-images.githubusercontent.com/57767002/83368665-9972b280-a3f4-11ea-86cd-63060a3117d3.jpg)
+
+6. 저장하기
+   ~~~bash
+   Crtl + S
    ~~~
-   ![r12](https://user-images.githubusercontent.com/57767002/83366330-4fd09a80-a3e9-11ea-93f5-58dfa94a268d.jpg)
-   
-6. 작업 끝내기
+   ![r16](https://user-images.githubusercontent.com/57767002/83368781-100fb000-a3f5-11ea-819e-0a95a6ffe09e.jpg)
+
+
+7. 작업 끝내기
    ~~~bash
    Ctrl + c
    
    # 작업을 끝내면 터미널 입력창이 다시 나타난다.
    ~~~
+   ![r17](https://user-images.githubusercontent.com/57767002/83368621-806a0180-a3f4-11ea-8223-a60e2ac76322.jpg)
    
 ### Commands 
 1. Style
-+ nested: sass 형식과 유사한 스타일. 기본값 옵션을 추가하지 않아도 기본으로 적용.
-  ~~~bash
-  # sass --style nested 컴파일할 파일명.scss 컴파일될 파일명.css
-  sass --style nested common.scss common.css
-  ~~~
+   
+   + nested: sass 형식과 유사한 스타일. 기본값 옵션을 추가하지 않아도 기본으로 적용.
+     ~~~bash
+     # sass --style nested 컴파일할 파일명.scss 컴파일될 파일명.css
+     sass --style nested common.scss common.css
+     ~~~
 
-+ expanded: 표준적인 css 스타일
-  ~~~bash
-  # sass --style expanded 컴파일할 파일명.scss 컴파일될 파일명.css
-  sass --style nested common.scss common.css
-  ~~~
+   + expanded: 표준적인 css 스타일
+     ~~~bash
+     # sass --style expanded 컴파일할 파일명.scss 컴파일될 파일명.css
+     sass --style nested common.scss common.css
+     ~~~
 
-+ compact: 여러 룰셋을 한 줄로 나타내는 스타일
-  ~~~bash
-  # sass --style compact 컴파일할 파일명.scss 컴파일될 파일명.css
-  sass --style nested common.scss common.css
-  ~~~
+   + compact: 여러 룰셋을 한 줄로 나타내는 스타일
+     ~~~bash
+     # sass --style compact 컴파일할 파일명.scss 컴파일될 파일명.css
+     sass --style nested common.scss common.css
+     ~~~
 
-+ compressed: 가능한 빈공간이 없는 압축된 스타일
-  ~~~bash
-  # sass --style compressed 컴파일할 파일명.scss 컴파일될 파일명.css
-  sass --style nested common.scss common.css
-  ~~~
-  ![05](https://user-images.githubusercontent.com/57767002/82981839-d96a1c00-a027-11ea-86b9-b3a3bc5ee799.jpg)
+   + compressed: 가능한 빈공간이 없는 압축된 스타일
+     ~~~bash
+     # sass --style compressed 컴파일할 파일명.scss 컴파일될 파일명.css
+     sass --style nested common.scss common.css
+     ~~~
+   
+     ![r13](https://user-images.githubusercontent.com/57767002/83368682-adb6af80-a3f4-11ea-9add-f49a42831ced.jpg)
   
-2. watch: scss 파일의 변경을 감지하여 변경될 때마다 scss 파일을 컴파일하여 css 파일을 자동 업데이트
+2. style + watch 동시에 명령하기
+   ~~~bash
+   # sass --watch --style compressed [경로/컴파일할 파일명.scss] [경로/컴파일될 파일명.css]
+   sass --watch --style nested common.scss common.css
+   ~~~
+   ![r15](https://user-images.githubusercontent.com/57767002/83368600-66302380-a3f4-11ea-8f2b-1107d9721ea3.jpg)
 
-+ 디렉토리 단위 watch
-  ~~~bash
-  cd 작업경로
+  
 
-  # sass --watch 컴파일할 파일명.scss 컴파일될 파일명.css
-  sass --watch src/sass/common.scss dist/css/common.css
-  ~~~
-  ![06](https://user-images.githubusercontent.com/57767002/82981841-d96a1c00-a027-11ea-87e1-9528ca8648a1.jpg)
-  
-  
 ### Sass Syntax
 + SassScript [https://poiemaweb.com/sass-script]
 + Sass CSS Extensions [https://poiemaweb.com/sass-css-extention]
