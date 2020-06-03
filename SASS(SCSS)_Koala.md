@@ -7,6 +7,8 @@ SASS(SCSS)사용하기_Koala
 ### Install
 1. koala Installer 설치 [http://koala-app.com/]
 
+   ![koala-sass-compiler](https://user-images.githubusercontent.com/57767002/83590471-cbb91700-a590-11ea-9ef9-02e12d77f4c7.jpg)
+
    ![01](https://user-images.githubusercontent.com/57767002/83588631-c78afa80-a58c-11ea-9c8d-0efb0f29fc6a.jpg)
 
    ![02](https://user-images.githubusercontent.com/57767002/83588632-c8bc2780-a58c-11ea-9d00-8561a864c0f1.jpg)
