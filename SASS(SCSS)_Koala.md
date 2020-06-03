@@ -41,7 +41,7 @@ SASS(SCSS)사용하기_Koala
 4. compile
 
    ~~~bash
-   # 작업하고 있는 파일을 클릭하면 오른쪽에 패널에서 하단에 있는 complie을 클릭...!
+   # 작업하고 있는 파일을 클릭하면  오른쪽에 패널에서 하단에 있는 complie을 클릭...!
    ~~~
    
    ![06](https://user-images.githubusercontent.com/57767002/83588649-cfe33580-a58c-11ea-80ee-dc4d399133c7.jpg)
